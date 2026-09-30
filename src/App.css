@@ -1,0 +1,161 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f3f4f6;
+  color: #222;
+}
+
+/* Login Page */
+
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.auth-form {
+  width: 100%;
+  max-width: 400px;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.auth-form h1 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.auth-form label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+.auth-form input[type="text"],
+.auth-form input[type="password"] {
+  width: 100%;
+  padding: 11px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.remember {
+  display: flex !important;
+  align-items: center;
+  gap: 8px;
+  font-weight: normal !important;
+}
+
+.remember input {
+  width: auto;
+}
+
+.auth-form button,
+.dashboard button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 6px;
+  background: #2563eb;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.auth-form button:hover,
+.dashboard button:hover {
+  opacity: 0.85;
+}
+
+.error {
+  color: #dc2626;
+  font-weight: bold;
+}
+
+.strength {
+  font-weight: bold;
+}
+
+.strength.weak {
+  color: #dc2626;
+}
+
+.strength.medium {
+  color: #d97706;
+}
+
+.strength.strong {
+  color: #16a34a;
+}
+
+/* Dashboard */
+
+.dashboard {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 35px;
+  background: white;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.dashboard h1 {
+  color: #2563eb;
+}
+
+.dashboard h2 {
+  margin-top: 25px;
+}
+
+.dashboard p {
+  line-height: 1.6;
+}
+
+/* Authentication Status */
+
+.auth-status {
+  margin: 25px auto;
+  padding: 20px;
+  background: #f8fafc;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  max-width: 500px;
+}
+
+.auth-status h3 {
+  margin-top: 0;
+  color: #2563eb;
+}
+
+.auth-status p {
+  margin: 8px 0;
+}
+
+.dashboard button {
+  max-width: 200px;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  .auth-form {
+    padding: 25px 20px;
+  }
+
+  .dashboard {
+    margin: 20px;
+    padding: 25px 20px;
+  }
+}
